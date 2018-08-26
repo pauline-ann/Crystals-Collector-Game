@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/gem.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body background="assets/images/crystalbackground.png">
+
+    <div class="jumbotron">
+        <h1 class="text-center">Crystal Collector</h1><br>
+        <h6 class="text-center">*✧･ﾟ:* Instructions *:･ﾟ✧*</h6>
+    </div>
+
+    <div class="container instructions">
+        <p>✧ You will be given a random number at the beginning of the game.</p>
+        <p>✧ By clicking one of the 4 crystals below, you will add a specific amount of points to your score (shown in the
+            right box).</p>
+        <p>✧ You win the game by matching your total score to the random number; you lose if it goes above the random number.</p>
+        <p>✧ The point value of each crystal is hidden from you until you click on it.</p>
+        <p>✧ Each time when the game starts, the value of each crystal will be different.</p>
+    </div>
+
+    <div class="container game-contents">
+        <div class="row numbers">
+            <div class="col-sm-6">
+                <h1 id="randomnumber"></h1>
+            </div>
+            <div class="col-sm-6">
+                <h1 id="totalscore"></h1>
+            </div>
+        </div>
+
+        <div class="row message">
+            <div class="col-sm-12">
+                <h6 id="message"></h6>
+            </div>
+        </div>
+
+        <div class="row scoreboard">
+            <div class="col-sm-6">
+                <h6 class="wins">Wins: <span id="wins"></span></h6>
+            </div>
+            <div class="col-sm-6">
+                <h6 class="losses">Losses: <span id="losses"></span></h6>
+            </div>
+        </div>
+
+        <div class="row crystals">
+            <div class="col-sm-3 gem">
+                <img id="bluegem" src="assets/images/jewel1.png">
+            </div>
+            <div class="col-sm-3 gem">
+                <img id="greengem" src="assets/images/jewel2.png">
+            </div>
+            <div class="col-sm-3 gem">
+                <img id="pinkgem" src="assets/images/jewel3.png">
+            </div>
+            <div class="col-sm-3 gem">
+                <img id="yellowgem" src="assets/images/jewel4.png">
+            </div>
+        </div>
+    </div>
+
+<script src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
